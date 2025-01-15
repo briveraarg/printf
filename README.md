@@ -111,13 +111,13 @@ El sistema hexadecimal es una representación numérica en base 16. Es ampliamen
 
 El sistema hexadecimal usa 16 símbolos para representar valores: `0-9` para los valores numéricos del 0 al 9, y `A-F` (o `a-f`) para los valores 10 a 15. Este sistema es muy útil en programación porque cada dígito hexadecimal representa exactamente 4 bits, o un "nibble", lo que hace más fácil trabajar con números binarios y direcciones de memoria.
 
-#### Ventajas de usar hexadecimal:
+#### Ventajas:
 
-1. **Compacto**: En lugar de escribir largos números binarios, podemos usar valores más compactos en hexadecimal.
-2. **Facilidad de conversión**: Un dígito hexadecimal se corresponde con 4 bits, lo que facilita la conversión entre binario y hexadecimal.
-3. **Uso en memoria y direcciones**: Es comúnmente usado en programación de bajo nivel para representar direcciones de memoria o registros de hardware.
+1. **Compacto**: en lugar de escribir largos números binarios, podemos usar valores más compactos en hexadecimal.
+2. **Facilidad de conversión**: un dígito hexadecimal se corresponde con 4 bits, lo que facilita la conversión entre binario y hexadecimal.
+3. **Uso en memoria y direcciones**: es comúnmente usado en programación de bajo nivel para representar direcciones de memoria o registros de hardware.
 
-### Ejemplo de uso de hexadecimal en C:
+#### Ejemplo:
 
 En C, podemos utilizar el especificador de formato `%x` o `%X` en `printf` para imprimir números en formato hexadecimal.
 
@@ -140,14 +140,13 @@ int main()
 ```
 
 #### Uso común de hexadecimal en programación:
-Representación de colores: Los colores en aplicaciones gráficas se representan comúnmente en formato hexadecimal. Cada color se descompone en tres componentes: rojo, verde y azul (RGB), y cada uno se representa como un número hexadecimal entre 00 (sin intensidad) y FF (máxima intensidad).
+- Representación de colores: Los colores en aplicaciones gráficas se representan comúnmente en formato hexadecimal. Cada color se descompone en tres componentes: rojo, verde y azul (RGB), y cada uno se representa como un número hexadecimal entre 00 (sin intensidad) y FF (máxima intensidad).
 
-Direcciones de memoria: En programación de sistemas o programación a nivel de hardware, las direcciones de memoria y registros se representan en hexadecimal porque facilita la visualización y manejo de direcciones largas.
+- Direcciones de memoria: En programación de sistemas o programación a nivel de hardware, las direcciones de memoria y registros se representan en hexadecimal porque facilita la visualización y manejo de direcciones largas.
 
-Codificación de datos binarios: El sistema hexadecimal es útil cuando se necesita trabajar con datos binarios de manera eficiente, ya que cada byte (8 bits) puede representarse con dos dígitos hexadecimales.
+- Codificación de datos binarios: El sistema hexadecimal es útil cuando se necesita trabajar con datos binarios de manera eficiente, ya que cada byte (8 bits) puede representarse con dos dígitos hexadecimales.
 
 #### Conversión entre binario y hexadecimal:
-
 De binario a hexadecimal: Los números binarios se agrupan de 4 en 4 bits (nibbles) y luego se convierten a un solo dígito hexadecimal. Por ejemplo, el número binario 1111 es igual a F en hexadecimal.
 De hexadecimal a binario: Cada dígito hexadecimal se convierte en un grupo de 4 bits binarios. Por ejemplo, F en hexadecimal se convierte en 1111 en binario.
 
