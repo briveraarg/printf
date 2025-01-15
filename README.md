@@ -60,16 +60,9 @@
 
   - En Linux, cuando se pasa un puntero nulo (`NULL`) a `%p`, la salida será `(nil)`.
   - En otros sistemas, esta representación puede cambiar.
-
-
-Cuando se utilizan números negativos con el especificador `%u`, el valor se interpreta como un entero sin signo, aprovechando la representación de complemento a dos. Por ejemplo:
-
-  ```c
-  printf("%u\n", -1);
-  ```
-  En un sistema de 32 bits, esto imprimirá `4294967295`, que es el valor máximo de un entero sin signo de 32 bits.
   
-- **Complemento a dos:** Es una forma de representar números negativos en binario. Un número negativo como `-1` en complemento a dos se obtiene invirtiendo todos los bits de su representación en binario positivo y sumándole 1.
+#### Complemento a dos
+Es una forma de representar números negativos en binario. Un número negativo como `-1` en complemento a dos se obtiene invirtiendo todos los bits de su representación en binario positivo y sumándole 1.
 En el caso de un entero de 32 bits:
 
   ```plaintext
@@ -85,6 +78,10 @@ Esto es porque en un número sin signo, todos los bits se suman, y el valor `111
 #### ¿Por qué es importante el complemento a dos?
 
 El complemento a dos es un sistema utilizado para representar números negativos en binario. Permite realizar operaciones aritméticas sin necesidad de operaciones separadas para números negativos, facilitando la implementación en hardware y software.
+
+Cuando se utilizan números negativos con el especificador `%u`, el valor se interpreta como un entero sin signo, aprovechando la representación de complemento a dos. 
+
+Por ejemplo:
 
 ```c
 #include <stdio.h>
