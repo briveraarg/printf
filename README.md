@@ -71,9 +71,27 @@
 - **Complemento a dos:** Es una forma de representar números negativos en binario. Un número negativo como `-1` en complemento a dos se obtiene invirtiendo todos los bits de su representación en binario positivo y sumándole 1. En el caso de un entero de 32 bits:
 
   ```plaintext
+  1 en binario: 00000000 00000000 00000000 00000001 (32 bits)
   -1 en binario: 11111111 11111111 11111111 11111111 (32 bits)
   Interpretable como 4294967295 en entero sin signo.
   ```
+
+```c
+#include <stdio.h>
+
+int main()
+{
+    printf("%u\n", -3);  // Se interpreta como un entero sin signo
+    printf("%u\n", 3);   // Se imprime el valor 3 como un entero sin signo
+    return (0);
+}
+```
+
+Salida :
+```c
+4294967293
+3
+```
 
 ## Archivos
 
@@ -81,8 +99,8 @@
   - `-Wall`: Habilita todos los warnings.
   - `-Werror`: Considera los warnings como errores.
   - `-Wextra`: Habilita warnings adicionales.
-- **ft\_printf.c**: Implementación principal de la función `ft_printf`.
 - **ft\_printf.h**: Archivo de cabecera que contiene las declaraciones de funciones y macros necesarias.
+- **ft\_printf.c**: Implementación principal de la función `ft_printf`.
 - **ft\_putnbr\_base.c**: Funciones auxiliares para manejar la conversión de números a diferentes bases.
 - **ft\_write\_char.c**: Funciones para imprimir caracteres y cadenas.
 - **ft\_write\_number.c**: Funciones para imprimir números en diferentes formatos.
